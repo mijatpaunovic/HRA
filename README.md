@@ -11,6 +11,31 @@ This repository contains Python code for reproducing results presented in the ma
 # Code for HRA Analysis
 The Python code for data preparation, preprocessing, and Heart Rate Asymmetry analysis is given in the following scripts:
 
+## Project Code Overview
+This workspace is structured as a sequential pipeline, moving from raw signal preparation through statistical analysis and figure generation. Each top-level directory corresponds to one stage of the workflow.
+
+## `0_data_preparation/`
+- Houses subject-specific preprocessing pipelines for chronic heart failure (`chf/`) and healthy subjects (`hs/`).
+- Subdirectories (`1_raw_ecg` → `5_extract_timescales`) track the evolution from raw ECG pulls to derived heart-rate variability (HRV) features and scale-dependent metrics.
+
+## `1_apply_inclusion_criteria/`
+- Scripts (`1_extract_hs_ids.py`, `2_extract_chf_ids.py`) filter subject IDs that meet study criteria.
+- `1_all_IDs/` and `2_extracted_IDs/` store intermediate CSV/JSON lists for healthy and CHF cohorts.
+
+## `2_compute_nonlinear_measures/`
+- `calculate_pp_measures.py` aggregates processed signals and computes nonlinear point-process measures.
+- Result folders (`results_oHS_vs_CHF/`, `results_yHS_vs_oHS/`) hold exports comparing cohorts (older vs. younger healthy subjects, healthy vs. CHF).
+
+## `3_statistical_analysis/`
+- `run_statistical_analysis.py` conducts group-level statistical tests on the computed metrics.
+- `hra/` includes auxiliary routines (e.g., heart rate asymmetry utilities); `results/` caches statistical summaries.
+
+## `4_visualization/`
+- Contains plotting scripts for publication-ready figures; current focus is `effect_size_comparison/`.
+- `effect_size_comparison_composite_bar_plot.py` recreates grouped bar charts like `grouped_bar_plot__oHS_vs_CHF.png`.
+
+Use the directory numbers to follow the standard analysis order (0 → 4) when reproducing or extending the workflow.
+
 
 # Data
 
