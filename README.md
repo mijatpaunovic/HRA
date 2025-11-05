@@ -38,9 +38,7 @@ For reproducibility, obtain and store the datasets in the following locations:
    → Place in: `0_data_preparation/chf/2_raw_ecg_prepared`  
    *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
 
-#### 🧩 Using Custom Datasets
-
-To perform the analysis on your own data:
+For custom datasets:
 
 - Prepare recordings as **MAT row vectors** of RR-interval durations.  
 - Ensure filenames use **3- or 4-digit zero-padded numbers** (e.g., `0023.mat`, `0008.mat`, …).  
