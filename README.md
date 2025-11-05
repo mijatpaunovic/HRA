@@ -14,6 +14,7 @@ Ordinal numbers of directories (and of their respective subdirectories) determin
 ### 1. Data Preparation and Preprocessing
 
 **_1.1. Data preparation_**
+
 This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets:
 
 - **Healthy Subjects (HS) group**
