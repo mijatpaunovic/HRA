@@ -1,4 +1,4 @@
-## Heart Rate Asymmetry Analysis
+## 🫀 Heart Rate Asymmetry Analysis
 
 This repository contains Python code for reproducing results presented in the unpublished manuscript  
 **"Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes"**,  
@@ -6,82 +6,154 @@ authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćo
 
 ---
 
-## Repository Structure Overview
+## 📁 Repository Structure Overview
 
-The repository is divided into pipeline units, placed in separate directories.  
-Ordinal numbers of directories (and of their respective subdirectories) determine the sequence in which the scripts should be executed.
-
-### Data Preparation and Preprocessing
-
-**_Data preparation_**
-
-This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets:
-
-- Healthy Subjects (HS) group
-- Patients with Congestive Heart Failure (CHF) group
-
-Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as MAT row vectors of integer values indicating consecutive RR-interval durations (in milliseconds). Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations - mainly related to relative paths and descriptive naming.
+The repository is organized into **pipeline units**, each placed in a numbered directory.  
+Ordinal numbers of directories (and their subdirectories) determine the execution sequence of scripts.
 
 ---
-For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
 
-1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/) → Place in: `0_data_preparation/hs/1_raw_ecg`
+### 1️⃣ Data Preparation and Preprocessing
+
+#### **_Data preparation_**
+
+This directory is divided into subdirectories corresponding to two electrocardiogram (ECG) datasets:
+
+- **Healthy Subjects (HS)** group  
+- **Patients with Congestive Heart Failure (CHF)** group  
+
+Given the different data formats, the two datasets are prepared separately with specialized scripts as **MAT row vectors** of integer values representing consecutive RR-interval durations (in milliseconds).  
+
+After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
+
+---
+
+#### 📦 Dataset Placement
+
+For reproducibility, obtain and store the datasets in the following locations:
+
+1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/)  
+   → Place in: `0_data_preparation/hs/1_raw_ecg`
 
 2. **Patients with Congestive Heart Failure (CHF)**  
-   (Available from: *[insert link once available]*) → Place in: `0_data_preparation/chf/2_raw_ecg_prepared` *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
+   (Available from: *[insert link once available]*)  
+   → Place in: `0_data_preparation/chf/2_raw_ecg_prepared`  
+   *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
 
 ---
-To perform the analysis on different datasets:
 
-- Prepare them as MAT row vectors of RR-interval durations.
-- Make sure that the MAT files are named with 3- or 4-digit numbers, padded with zeros (_eg._ 0023.mat, 0008.mat ...)  
-- Place them in the same directories (`hs` or `chf`) as above.  
-- **Do not rename** the directories or Python scripts, since many relative paths are hardcoded. Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
+#### 🧩 Using Custom Datasets
+
+To perform the analysis on your own data:
+
+- Prepare recordings as **MAT row vectors** of RR-interval durations.  
+- Ensure filenames use **3- or 4-digit zero-padded numbers** (e.g., `0023.mat`, `0008.mat`, …).  
+- Place files into the corresponding directories (`hs` or `chf`).  
+- **Do not rename** directories or Python scripts — many relative paths are hardcoded.  
+- Dataset labeling is handled automatically through **USER CONFIGURATION** blocks in subsequent scripts.
 
 ---
-**_Preprocessing and HRV Preparation_**
+
+#### ⚙️ Preprocessing and HRV Preparation
+
 The following subdirectories contain Python scripts for:
 
-- Preprocessing
-- Obtaining HRV from ECG
-- Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate timescale directories
+- **Preprocessing raw ECG data**  
+- **Obtaining HRV from ECG**  
+- **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate *timescale* directories  
 
 ---
 
-### 1. Application of Inclusion Criteria
+### 2️⃣ Application of Inclusion Criteria
 
-Subject information are provided in different file formats:
+Subject metadata are provided in different formats:
 
-- 1_hs_data.csv (renamed from the original subject-info.csv) for HS group
-- 2_dcm_data.csv for CHF group
+- `1_hs_data.csv` (renamed from the original `subject-info.csv`) — for the HS group  
+- `2_dcm_data.csv` — for the CHF group  
 
-Respectively, two different scripts are required for the extraction of subject IDs which meet the inclusion criteria.
-
----
-For reproducibility, refer to the script descriptions which will direct you to specific changes you should make within the USER CONFIGURATION blocks
+Each dataset requires its own Python script to extract subject IDs meeting the inclusion criteria.
 
 ---
-To perform the analysis on a different dataset, you will need to apply the desired inclusion criteria based on the available subject information. To be able to continue through the pipeline, make sure that the ID list is stored as a column CSV file with the column named ID.
 
-### 2. Computation of Nonlinear Measures
-The standard Poincaré plot descriptors (SD1 and SD2) and Heart Rate Asymmetry (HRA) measures - Guzik Index, Porta Index, Asymmetric Spread Index, Histogram-based Asymmetry Magnitude Index (AMI), Slope Index, Area Index, and Kernel Density Estimation-based AMI - are computed for each HRV and for each short-term timescale using the 2_calculate_pp_measures.py script.
+#### 🔁 Reproducibility Notes
+
+Refer to the **script descriptions** for detailed instructions on changes needed in the **USER CONFIGURATION** blocks.  
+
+When applying the pipeline to other datasets:
+
+- Define inclusion criteria appropriate to your dataset.  
+- Save the resulting ID list as a **single-column CSV** named `ID`.  
+  This ensures compatibility with downstream scripts.
 
 ---
-For reproducibility, as well as for application to a different dataset, refer to the script description which will direct you to specific changes you should make within the USER CONFIGURATION blocks.
 
-### 3. Statistical Analysis
+### 3️⃣ Computation of Nonlinear Measures
 
-Statistical test are performed using the 3_run_statistical_analysis.py script.
+This stage computes:
+
+- **Standard Poincaré plot descriptors:** `SD1`, `SD2`  
+- **Heart Rate Asymmetry (HRA) measures:**  
+  - Guzik Index (GI)  
+  - Porta Index (PI)  
+  - Asymmetric Spread Index (ASI)  
+  - Histogram-based Asymmetry Magnitude Index (HB AMI)  
+  - Slope Index (SI)  
+  - Area Index (AI)  
+  - Kernel Density Estimation-based AMI (KDE AMI)
+
+All are computed for each HRV signal and short-term timescale using  
+`2_calculate_pp_measures.py`.
 
 ---
-For reproducibility, as well as for application to a different dataset, refer to the script description which will direct you to specific changes you should make within the USER CONFIGURATION blocks.
 
-### 4. Visualization
+#### 🔁 Reproducibility Notes
 
-This directory contains visualization scripts for:
+Before running this stage:
 
-1. Bar plot comparison of effect sizes achieved when employing nonlinear measures to distinguish between different subject groups across short-term timescales.
-2. A three-dimensional surface plot which illustrates how histogram resolution affects the performance of HB AMI across short-term timescales.  
+- Review the **USER CONFIGURATION** block within the script.  
+- Adjust group labels and timescale directories as necessary.  
+- Ensure the preprocessed datasets follow the expected directory hierarchy.
+
+---
+
+### 4️⃣ Statistical Analysis
+
+Statistical testing is conducted via `3_run_statistical_analysis.py`.
+
+This step performs:
+
+- **Normality testing**  
+- **Selection of parametric or non-parametric tests**  
+- **Effect size computation (Cohen’s d or Cliff’s δ)**  
+- **CSV export of group-wise results**
+
+---
+
+#### 🔁 Reproducibility Notes
+
+Before execution:
+
+- Modify paths and group names inside the **USER CONFIGURATION** block.  
+- The script is compatible with outputs generated by the nonlinear measure computation step.
+
+---
+
+### 5️⃣ Visualization
+
+This directory contains scripts for visualizing results:
+
+1. **Grouped bar plots** comparing effect sizes of nonlinear measures across short-term timescales.  
+2. **3D surface plots** illustrating how histogram resolution influences the performance of the HB AMI across timescales.  
+
+---
+
+#### 📊 Output
+
+Figures are automatically saved in the same directory as their respective scripts,  
+following descriptive and reproducible naming conventions.
+
+---
+
 
 # Disclaimer
 The Python code is provided without any guarantee and it is not intended for medical purposes.
