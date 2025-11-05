@@ -48,7 +48,7 @@ For custom datasets:
 
 ---
 
-#### ⚙️  **_1.2 Preprocessing and RR Interval Extraction_**
+#### **_1.2 Preprocessing and RR Interval Extraction_**
 
 The following subdirectories contain Python scripts for:
 
