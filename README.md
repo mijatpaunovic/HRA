@@ -5,7 +5,21 @@ This repository contains Python code for reproducing results presented in the un
 ## Repository Structure Overview
 The repository is divided into pipeline units, placed into separate directories. Ordinal numbers of directories as well as those of respective subdirectories determine the sequence in which the scripts within the corresponding directories should be ran:
   1. Data preparation and preprocessing.
-       The two electrocardiogram (ECG) datasets, Healthy Subjects group (HS) and patients with Congestive Heart Failure (CHF) group, are prepared as MAT row vectors of integer values indicating consecutive RR interval durations, denoted in          miliseconds. The
+       _Data preparation_
+       This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets, Healthy Subjects group (HS) and patients with Congestive Heart Failure (CHF) group. Given the different forms in which the datasets        were obtained, they are prepared separately with specialized scripts as MAT row vectors of integer values indicating consecutive RR interval durations, denoted in miliseconds. Subsequently, throughout the entire pipeline, both                prepared datasets flow through the same scripts with only the slight variations, which pertain mainly to appropriate relative paths and descriptive naming.
+
+       For reproducibility, the user should obtain the two datasets and place store them at appropriate locations within the repository structure:
+         1. [Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/) - to be stored in 0_data_preparation->hs->1_raw_ecg
+         2. Patients with Congestive Heart Failure (CHF), available from: .... - to be stored in 0_data_preparation->chf->2_raw_ecg_prepared (1_raw_ecg is skipped due to the file format being already adequate)
+
+       To perform the analysis on your own datasets, prepare them as MAT row vectors, and place them in the mentioned directories. Please avoid renaming of both the directories and Python scripts as the hardcoded relative paths rely on the          current naming. Labeling your datasets will be handled within specialized USER CONFIGURATION blocks within subsequent Python scripts.
+
+       The subsequent subdirectories contain Python scripts for _preprocessing_, _obtaining HRV from an ECG_, and _extracting the first 1, 5, 10 and 20 minutes of HRV into separate timescale directories_.
+
+  2. 
+       
+        
+    
   3. Application of inclusion criteria.
   4. Computation of nonlinear measures.
   5. Statistical analysis.
