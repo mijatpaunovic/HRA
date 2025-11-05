@@ -25,13 +25,10 @@ Given the different forms in which the datasets were obtained, they are prepared
 ---
 For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
 
-1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/)  
-   → Place in: `0_data_preparation/hs/1_raw_ecg`
+1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/) → Place in: `0_data_preparation/hs/1_raw_ecg`
 
 2. **Patients with Congestive Heart Failure (CHF)**  
-   (Available from: *[insert link once available]*)  
-   → Place in: `0_data_preparation/chf/2_raw_ecg_prepared`  
-   *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
+   (Available from: *[insert link once available]*) → Place in: `0_data_preparation/chf/2_raw_ecg_prepared` *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
 
 ---
 To perform the analysis on different datasets:
