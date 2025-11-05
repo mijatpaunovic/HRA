@@ -6,7 +6,7 @@ The repository is structured in the following way:
 
 ## Heart Rate Asymmetry Analysis
 This repository contains Python code for reproducing results presented in the manuscript "Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes
-" and authored by Mijat Paunović (ORCID: 0009-0006-4642-4695), [Marko Ćosić](0000-0002-4338-0555) (ORCID: 0000-0002-4338-0555), Nikola N. Radovanović (0000-0002-6545-2230), Mirjana M. Platiša (0000-0002-0915-2823), and Nadica Miljković (ORCID: 0000-0002-3933-6076).
+" and authored by Mijat Paunović (ORCID: 0009-0006-4642-4695), [Marko Ćosić]([url](https://orcid.org/0000-0002-4338-0555)) (ORCID: 0000-0002-4338-0555), Nikola N. Radovanović (0000-0002-6545-2230), Mirjana M. Platiša (0000-0002-0915-2823), and Nadica Miljković (ORCID: 0000-0002-3933-6076).
 
 ## Code for HRA Analysis
 The Python code for data preparation, preprocessing, and Heart Rate Asymmetry analysis is given in the following scripts:
