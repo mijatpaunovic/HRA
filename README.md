@@ -13,8 +13,7 @@ Ordinal numbers of directories (and of their respective subdirectories) determin
 
 ### 1. Data Preparation and Preprocessing
 
-**_Data preparation_**
-
+**_1.1. Data preparation_**
 This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets:
 
 - **Healthy Subjects (HS) group**
@@ -41,13 +40,12 @@ To perform the analysis on your own datasets:
 - **Do not rename** the directories or Python scripts, since many relative paths are hardcoded. Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
 
 ---
-**_Subsequent Subdirectories_**
-
+**_1.2. Preprocessing and HRV Preparation_**
 The following subdirectories contain Python scripts for:
 
-- **Preprocessing**
-- **Obtaining HRV from ECG**
-- **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate **timescale directories**
+- Preprocessing
+- Obtaining HRV from ECG
+- Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate timescale directories
 
 ---
 
