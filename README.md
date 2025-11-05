@@ -8,7 +8,12 @@ authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćo
 
 ## 📁 Repository Structure Overview
 
-The repository is organized into **pipeline units**, each placed in a numbered directory. Ordinal numbers of directories (and their subdirectories) determine the execution sequence of scripts.
+The repository is organized into **pipeline units**, each placed in a numbered directory. Ordinal numbers of directories (and their subdirectories) determine the execution sequence of scripts:
+1. Data Preparation, Preprocessing and RR Interval Extraction
+2. Application of Inclusion Criteria
+3. Computation of Nonlinear Measures
+4. Statistical Analyisis
+5. Visualization
 
 ### 1️⃣ Data Preparation, Preprocessing and RR Interval Extraction
 
