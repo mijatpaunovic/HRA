@@ -145,8 +145,7 @@ This directory contains scripts for visualizing results:
 
 #### 📊 Output
 
-Figures are automatically saved in the same directory as their respective scripts,  
-following descriptive and reproducible naming conventions.
+Figures are automatically saved in the same directory as their respective scripts, following descriptive naming conventions.
 
 ---
 
