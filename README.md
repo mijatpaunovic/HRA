@@ -120,7 +120,6 @@ Statistical testing is conducted via `3_run_statistical_analysis.py`.
 This step performs:
 
 - **Normality testing**  
-- **Selection of parametric or non-parametric tests**  
 - **Effect size computation (Cohen’s d or Cliff’s δ)**  
 - **CSV export of group-wise results**
 
