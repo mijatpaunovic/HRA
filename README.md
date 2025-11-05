@@ -20,12 +20,7 @@ This directory is separated into subdirectories corresponding to two electrocard
 - **Healthy Subjects (HS) group**
 - **Patients with Congestive Heart Failure (CHF) group**
 
-Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as **MAT row vectors** of integer values indicating consecutive RR-interval durations (in milliseconds).  
-
-Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations — mainly related to relative paths and descriptive naming.
-
----
-### Dataset Placement
+Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as **MAT row vectors** of integer values indicating consecutive RR-interval durations (in milliseconds). Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations - mainly related to relative paths and descriptive naming.
 
 For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
 
