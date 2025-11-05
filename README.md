@@ -53,7 +53,7 @@ For custom datasets:
 The following subdirectories contain Python scripts for:
 
 - **Preprocessing raw ECG data**  
-- **Obtaining HRV from ECG**  
+- **Obtaining HRV from an ECG**  
 - **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate *timescale* directories  
 
 ---
