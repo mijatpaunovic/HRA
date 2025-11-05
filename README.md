@@ -56,24 +56,29 @@ The following subdirectories contain Python scripts for:
 - **Obtaining HRV from an ECG**  
 - **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate *timescale* directories  
 
-Refer to the script descriptions for detailed instructions on changes to be made in the **USER CONFIGURATION** blocks.
+each processing the output from the preceding one.
+
+Refer to the script descriptions for detailed instructions on changes to be made in the **USER CONFIGURATION** blocks in order to run the scripts.
 
 ---
 
 ### 2️⃣ Application of Inclusion Criteria
 
-Subject metadata are provided in different formats:
+Subject metadata are provided in different formats for the analyzed datasets:
 
 - `1_hs_data.csv` (renamed from the original `subject-info.csv`) — for the HS group  
 - `2_dcm_data.csv` — for the CHF group  
 
-Each dataset requires its own Python script to extract subject IDs meeting the inclusion criteria.
+Each dataset requires its own Python script to extract subject IDs meeting the inclusion criteria:
+
+- 1_extract_hs_ids.py — for the HS group
+- 2_extract_chf_ids.py — for the CHF group
 
 ---
 
 #### 🔁 Reproducibility Notes
 
-Refer to the **script descriptions** for detailed instructions on changes needed in the **USER CONFIGURATION** blocks.  
+Refer to the **script descriptions** for detailed instructions on changes to be made in the **USER CONFIGURATION** blocks to adapt the script for different dataset comparisons.  
 
 When applying the pipeline to other datasets:
 
