@@ -24,9 +24,7 @@ This directory is divided into subdirectories corresponding to two electrocardio
 - **Healthy Subjects (HS)** group  
 - **Patients with Congestive Heart Failure (CHF)** group  
 
-Given the different data formats, the two datasets are prepared separately with specialized scripts as **MAT row vectors** of integer values representing consecutive RR-interval durations (in milliseconds).  
-
-After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
+Given the different data formats, the two datasets are prepared separately with specialized scripts as **MAT row vectors** of integer values representing consecutive RR-interval durations (in milliseconds). After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
 
 #### 📦 Inserting a Dataset into the Pipeline
 
