@@ -56,7 +56,8 @@ The following subdirectories contain Python scripts for:
 - **Obtaining HRV from an ECG**  
 - **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate *timescale* directories  
 
-Refer to the **script descriptions** for detailed instructions on changes needed in the **USER CONFIGURATION** blocks.
+Refer to the script descriptions for detailed instructions on changes to be made in the **USER CONFIGURATION** blocks.
+
 ---
 
 ### 2️⃣ Application of Inclusion Criteria
