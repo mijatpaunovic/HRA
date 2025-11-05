@@ -13,9 +13,9 @@ Ordinal numbers of directories (and their subdirectories) determine the executio
 
 ---
 
-### 1️⃣ Data Preparation and Preprocessing
+### 1️⃣ Data Preparation, Preprocessing and RR Interval Extraction
 
-#### **_Data preparation_**
+#### **_1.1 Data preparation_**
 
 This directory is divided into subdirectories corresponding to two electrocardiogram (ECG) datasets:
 
@@ -25,8 +25,6 @@ This directory is divided into subdirectories corresponding to two electrocardio
 Given the different data formats, the two datasets are prepared separately with specialized scripts as **MAT row vectors** of integer values representing consecutive RR-interval durations (in milliseconds).  
 
 After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
-
----
 
 #### 📦 Dataset Placement
 
@@ -40,8 +38,6 @@ For reproducibility, obtain and store the datasets in the following locations:
    → Place in: `0_data_preparation/chf/2_raw_ecg_prepared`  
    *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
 
----
-
 #### 🧩 Using Custom Datasets
 
 To perform the analysis on your own data:
@@ -54,7 +50,7 @@ To perform the analysis on your own data:
 
 ---
 
-#### ⚙️ Preprocessing and HRV Preparation
+#### ⚙️  **_1.2 Preprocessing and RR Interval Extraction_**
 
 The following subdirectories contain Python scripts for:
 
