@@ -1,12 +1,18 @@
-# HRA
-
-## GitHub repository contents
-The repository is structured in the following way:
-1. Data prepa
-
 ## Heart Rate Asymmetry Analysis
-This repository contains Python code for reproducing results presented in the manuscript "Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes
-" and authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076).
+This repository contains Python code for reproducing results presented in the unpublished manuscript "Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes
+" and authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076). 
+
+## Repository Structure Overview
+The repository is divided into pipeline units, placed into separate directories. Ordinal numbers of directories as well as those of respective subdirectories determine the sequence in which the scripts within the corresponding directories should be ran:
+  1. Data preparation and preprocessing.
+       The two electrocardiogram (ECG) datasets, Healthy Subjects group (HS) and patients with Congestive Heart Failure (CHF) group, are prepared as MAT row vectors of integer values indicating consecutive RR interval durations, denoted in          miliseconds. The
+  3. Application of inclusion criteria.
+  4. Computation of nonlinear measures.
+  5. Statistical analysis.
+  6. Visualization.
+
+
+
 
 ## Code for HRA Analysis
 The Python code for data preparation, preprocessing, and Heart Rate Asymmetry analysis is given in the following scripts:
