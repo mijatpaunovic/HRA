@@ -25,8 +25,7 @@ Given the different forms in which the datasets were obtained, they are prepared
 Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations — mainly related to relative paths and descriptive naming.
 
 ---
-
-### 📦 Dataset Placement
+### Dataset Placement
 
 For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
 
@@ -39,25 +38,21 @@ For reproducibility, obtain the two datasets and store them in the following loc
    *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
 
 ---
-
-### 🧩 Custom Datasets
-
 To perform the analysis on your own datasets:
 
 - Prepare them as **MAT row vectors** of RR-interval durations.  
 - Place them in the same directories (`hs` or `chf`) as above.  
-- **Do not rename** the directories or Python scripts, since many relative paths are hardcoded.  
-- Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
+- **Do not rename** the directories or Python scripts, since many relative paths are hardcoded. Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
 
 ---
-
-### ⚙️ Subsequent Subdirectories
+### Subsequent Subdirectories 
 
 The following subdirectories contain Python scripts for:
 
 - **Preprocessing**
 - **Obtaining HRV from ECG**
 - **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate **timescale directories**
+
 
 ---
 
