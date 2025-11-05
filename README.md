@@ -23,7 +23,7 @@ Given the different data formats, the two datasets are prepared separately with 
 
 After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
 
-#### 📦 Dataset Placement
+#### 📦 Inserting a Dataset into the Pipeline
 
 For reproducibility, obtain and store the datasets in the following locations:
 
