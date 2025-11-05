@@ -1,4 +1,4 @@
-## 🫀 Heart Rate Asymmetry Analysis
+## Heart Rate Asymmetry Analysis
 
 This repository contains Python code for reproducing results presented in the unpublished manuscript  
 **"Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes"**,  
