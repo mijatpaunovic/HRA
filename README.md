@@ -8,7 +8,7 @@ authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćo
 
 ## Repository Structure Overview
 
-The repository is divided into **pipeline units**, placed in separate directories.  
+The repository is divided into pipeline units, placed in separate directories.  
 Ordinal numbers of directories (and of their respective subdirectories) determine the sequence in which the scripts should be executed.
 
 ### Data Preparation and Preprocessing
@@ -17,10 +17,10 @@ Ordinal numbers of directories (and of their respective subdirectories) determin
 
 This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets:
 
-- **Healthy Subjects (HS) group**
-- **Patients with Congestive Heart Failure (CHF) group**
+- Healthy Subjects (HS) group
+- Patients with Congestive Heart Failure (CHF) group
 
-Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as **MAT row vectors** of integer values indicating consecutive RR-interval durations (in milliseconds). Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations - mainly related to relative paths and descriptive naming.
+Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as MAT row vectors of integer values indicating consecutive RR-interval durations (in milliseconds). Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations - mainly related to relative paths and descriptive naming.
 
 ---
 For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
