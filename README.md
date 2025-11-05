@@ -109,11 +109,7 @@ All are computed for each HRV signal and short-term timescale using
 
 #### 🔁 Reproducibility Notes
 
-Before running this stage:
-
-- Review the **USER CONFIGURATION** block within the script.  
-- Adjust group labels and timescale directories as necessary.  
-- Ensure the preprocessed datasets follow the expected directory hierarchy.
+Before running this stage review the **USER CONFIGURATION** block within the script.   
 
 ---
 
