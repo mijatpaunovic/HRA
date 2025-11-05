@@ -1,23 +1,67 @@
 ## Heart Rate Asymmetry Analysis
-This repository contains Python code for reproducing results presented in the unpublished manuscript "Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes
-" and authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076). 
+
+This repository contains Python code for reproducing results presented in the unpublished manuscript  
+**"Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes"**,  
+authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076).
+
+---
 
 ## Repository Structure Overview
-The repository is divided into pipeline units, placed into separate directories. Ordinal numbers of directories as well as those of respective subdirectories determine the sequence in which the scripts within the corresponding directories should be ran:
-  1. Data preparation and preprocessing.
-       _Data preparation_
-       This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets, Healthy Subjects group (HS) and patients with Congestive Heart Failure (CHF) group. Given the different forms in which the datasets        were obtained, they are prepared separately with specialized scripts as MAT row vectors of integer values indicating consecutive RR interval durations, denoted in miliseconds. Subsequently, throughout the entire pipeline, both                prepared datasets flow through the same scripts with only the slight variations, which pertain mainly to appropriate relative paths and descriptive naming.
 
-       For reproducibility, the user should obtain the two datasets and place store them at appropriate locations within the repository structure:
-         1. [Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/) - to be stored in 0_data_preparation->hs->1_raw_ecg
-         2. Patients with Congestive Heart Failure (CHF), available from: .... - to be stored in 0_data_preparation->chf->2_raw_ecg_prepared (1_raw_ecg is skipped due to the file format being already adequate)
+The repository is divided into **pipeline units**, placed in separate directories.  
+Ordinal numbers of directories (and of their respective subdirectories) determine the sequence in which the scripts should be executed.
 
-       To perform the analysis on your own datasets, prepare them as MAT row vectors, and place them in the mentioned directories. Please avoid renaming of both the directories and Python scripts as the hardcoded relative paths rely on the          current naming. Labeling your datasets will be handled within specialized USER CONFIGURATION blocks within subsequent Python scripts.
+### 1. Data Preparation and Preprocessing
 
-       The subsequent subdirectories contain Python scripts for _preprocessing_, _obtaining HRV from an ECG_, and _extracting the first 1, 5, 10 and 20 minutes of HRV into separate timescale directories_.
+**_Data preparation_**
 
-  2. 
-       
+This directory is separated into subdirectories corresponding to two electrocardiogram (ECG) datasets:
+
+- **Healthy Subjects (HS) group**
+- **Patients with Congestive Heart Failure (CHF) group**
+
+Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as **MAT row vectors** of integer values indicating consecutive RR-interval durations (in milliseconds).  
+
+Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations — mainly related to relative paths and descriptive naming.
+
+---
+
+### 📦 Dataset Placement
+
+For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
+
+1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/)  
+   → Place in: `0_data_preparation/hs/1_raw_ecg`
+
+2. **Patients with Congestive Heart Failure (CHF)**  
+   (Available from: *[insert link once available]*)  
+   → Place in: `0_data_preparation/chf/2_raw_ecg_prepared`  
+   *(Note: `1_raw_ecg` is skipped because the provided files are already in the required format.)*
+
+---
+
+### 🧩 Custom Datasets
+
+To perform the analysis on your own datasets:
+
+- Prepare them as **MAT row vectors** of RR-interval durations.  
+- Place them in the same directories (`hs` or `chf`) as above.  
+- **Do not rename** the directories or Python scripts, since many relative paths are hardcoded.  
+- Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
+
+---
+
+### ⚙️ Subsequent Subdirectories
+
+The following subdirectories contain Python scripts for:
+
+- **Preprocessing**
+- **Obtaining HRV from ECG**
+- **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate **timescale directories**
+
+---
+
+
         
     
   3. Application of inclusion criteria.
