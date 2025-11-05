@@ -21,6 +21,7 @@ This directory is separated into subdirectories corresponding to two electrocard
 - **Patients with Congestive Heart Failure (CHF) group**
 
 Given the different forms in which the datasets were obtained, they are prepared separately with specialized scripts as **MAT row vectors** of integer values indicating consecutive RR-interval durations (in milliseconds). Subsequently, throughout the entire pipeline, both prepared datasets flow through the same scripts, with only minor variations - mainly related to relative paths and descriptive naming.
+
 ---
 For reproducibility, obtain the two datasets and store them in the following locations within the repository structure:
 
@@ -40,14 +41,13 @@ To perform the analysis on your own datasets:
 - **Do not rename** the directories or Python scripts, since many relative paths are hardcoded. Dataset labeling is handled through **USER CONFIGURATION** blocks inside subsequent Python scripts.
 
 ---
-### Subsequent Subdirectories 
+**_Subsequent Subdirectories_**
 
 The following subdirectories contain Python scripts for:
 
 - **Preprocessing**
 - **Obtaining HRV from ECG**
 - **Extracting the first 1, 5, 10, and 20 minutes of HRV** into separate **timescale directories**
-
 
 ---
 
