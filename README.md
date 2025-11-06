@@ -28,7 +28,7 @@ Given the different data formats, the two datasets are prepared separately with 
 
 For reproducibility, obtain and store the datasets in the following locations:
 
-1. [**autonomic-aging-cardiovascular/1.0.0**](https://doi.org/10.13026/mwad-va85)
+1. [**autonomic-aging-cardiovascular/1.0.0**](https://doi.org/10.13026/mwad-va85) [1-2]
    → Place in: `0_data_preparation/hs/1_raw_ecg`
 
 2. **Patients with Congestive Heart Failure (CHF)**  
