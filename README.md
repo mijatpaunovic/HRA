@@ -169,3 +169,4 @@ Nadica Miljković acknowledges the support from Grant No. 451-03-137/2025-03/200
 # How to cite this repository?
 If you find Heart Rate Asymmetry index and Python code useful for your own research and teaching class, please cite the following references:
 1. Paunović, M., Ćosić, M., Radovanović, N.N., Platiša, M.M., & Miljković, N. (2025). Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes, under review.
+2. Paunović, M., Ćosić, M., Radovanović, N.N., Platiša, M.M., & Miljković, N. (2025). Heart Rate Assymetry Analysis, (Version 1.0) [Computer software]. [https://github.com/mijatpaunovic/HRA](https://github.com/mijatpaunovic/HRA)
