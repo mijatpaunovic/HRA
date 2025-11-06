@@ -6,7 +6,7 @@ authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćo
 
 ---
 
-## 📁 Repository Structure Overview
+## Repository Structure Overview
 
 The repository is organized into **pipeline units**, each placed in a numbered directory. Ordinal numbers of directories (and their subdirectories) determine the execution sequence of scripts:
 1. Data Preparation, Preprocessing and RR Interval Extraction
@@ -26,7 +26,7 @@ This directory is divided into subdirectories corresponding to two electrocardio
 
 Given the different data formats, the two datasets are prepared separately with specialized scripts as **MAT row vectors** of integer values representing consecutive RR-interval durations (in milliseconds). After preparation, both datasets pass through identical processing scripts, differing only in relative paths and descriptive naming.
 
-#### 📦 Inserting a Dataset into the Pipeline
+####  Inserting a Dataset into the Pipeline
 
 For reproducibility, obtain and store the datasets in the following locations:
 
@@ -76,7 +76,7 @@ Each dataset requires its own Python script to extract subject IDs meeting the i
 
 ---
 
-#### 🔁 Reproducibility Notes
+#### Reproducibility Notes
 
 Refer to the **script descriptions** for detailed instructions on changes to be made in the **USER CONFIGURATION** blocks to adapt the script for different dataset comparisons.  
 
@@ -107,7 +107,7 @@ All are computed for each HRV signal and short-term timescale using
 
 ---
 
-#### 🔁 Reproducibility Notes
+#### Reproducibility Notes
 
 Before running this stage review the **USER CONFIGURATION** block within the script.   
 
@@ -125,7 +125,7 @@ This step performs:
 
 ---
 
-#### 🔁 Reproducibility Notes
+#### Reproducibility Notes
 
 Before execution:
 
@@ -143,7 +143,7 @@ This directory contains scripts for visualizing results:
 
 ---
 
-#### 📊 Output
+#### Output
 
 Figures are automatically saved in the same directory as their respective scripts, following descriptive naming conventions.
 
