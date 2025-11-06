@@ -1,6 +1,6 @@
 ## Heart Rate Asymmetry Analysis
 
-This repository contains Python code for reproducing results presented in the manuscript titled **"Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes"**, that is currently under review and it is authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076).
+This repository contains Python code for reproducing results presented in the manuscript titled **"Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes"**, that is currently under review and authored by [Mijat Paunović](https://orcid.org/0009-0006-4642-4695), [Marko Ćosić](https://orcid.org/0000-0002-4338-0555), [Nikola N. Radovanović](https://orcid.org/0000-0002-6545-2230), [Mirjana M. Platiša](https://orcid.org/0000-0002-0915-2823), and [Nadica Miljković](https://orcid.org/0000-0002-3933-6076).
 
 ---
 
@@ -151,13 +151,17 @@ Figures are automatically saved in the same directory as their respective script
 # Disclaimer
 The Python code is provided without any guarantee and it is not intended for medical purposes.
 
-# Acknowledgements
+# License
+Unless otherwise stated, shared scripts are free software: anyone can redistribute them and/or modify them under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (optionally) any later version. These programs are distributed in the hope that they will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. For more details, see the GNU General Public License. Anyone accessing this code should have received a copy of the GNU General Public License along with these programs. If not, the license is available at: https://www.gnu.org/licenses/.
+
+Please, report any bugs to the Author listed in the [Contacts](https://github.com/mijatpaunovic/HRA/tree/main?tab=readme-ov-file#contacts) section.
 
 # Contacts
 Mijat Paunović (paunovicjata@gmail.com) or Nadica Miljković (e-mail: nadica.miljkovic@etf.bg.ac.rs).
+
 # Funding
 Nadica Miljković acknowledges the support from Grant No. 451-03-137/2025-03/200103 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia. Marko Ćosić acknowledges the support from Grant No. 451-03-136/2025-03/20001 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia. Mirjana M. Platiša acknowledges the support from Grant No. 451-03-137/2025-03/200110 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia.
 
 # How to cite this repository?
-If you find Heart Rate Asymmetry feature and Python code useful for your own research and teaching class, please cite the following references:
-1. 
+If you find Heart Rate Asymmetry index and Python code useful for your own research and teaching class, please cite the following references:
+1. Paunović, M., Ćosić, M., Radovanović, N.N., Platiša, M.M., & Miljković, N. (2025). Mapping the Heart Rhythm: Leveraging Poincaré Plot Asymmetry to Detect Congestive Heart Failure and Age-related Changes, under review.
