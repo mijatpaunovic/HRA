@@ -1,0 +1,59 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Software for Heart Rate Asymmetry Analysis
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - orcid: 'https://orcid.org/0009-0006-4642-4695'
+    given-names: Mijat
+    family-names: Paunović
+    email: paunovicjata@gmail.com
+    affiliation: >-
+      University of Belgrade - School of Electrical
+      Engineering
+  - given-names: Marko
+    family-names: Ćosić
+    email: mcosic@vinca.rs
+    orcid: 'https://orcid.org/0000-0002-4338-0555'
+    affiliation: >-
+      Vinča Institute of Nuclear Sciences - National
+      Institute of the Republic of Serbia, University of
+      Belgrade
+  - given-names: Nikola
+    family-names: Radovanović
+    email: nikolar86@gmail.com
+    affiliation: >-
+      Pacemaker Center, University Clinical Center of
+      Serbia, University of Belgrade
+    orcid: 'https://orcid.org/0000-0002-6545-2230'
+    name-particle: N.
+  - given-names: Mirjana
+    name-particle: M.
+    family-names: Platiša
+    email: mirjana.platisa@med.bg.ac.rs
+    affiliation: >-
+      Laboratory for Biosignals, Institute of Biophysics in
+      Medicine, Faculty of Medicine, University of Belgrade
+    orcid: 'https://orcid.org/0000-0002-0915-2823'
+  - given-names: Nadica
+    family-names: Miljković
+    email: nadica.miljkovic@etf.bg.ac.rs
+    affiliation: >-
+      University of Belgrade - School of Electrical
+      Engineering
+    orcid: 'https://orcid.org/0000-0002-3933-6076'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.17544604
+repository-code: 'https://github.com/mijatpaunovic/HRA.git'
+keywords:
+  - electrocardiogram
+  - congestive heart failure
+  - heart rate asymmetry
+  - heart rate variability
+  - Poincaré plot
+license: GPL-3.0-or-later
