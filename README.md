@@ -28,7 +28,7 @@ Given the different data formats, the two datasets are prepared separately with 
 
 For reproducibility, obtain and store the datasets in the following locations:
 
-1. [**Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging**](https://physionet.org/content/autonomic-aging-cardiovascular/1.0.0/)  
+1. [**autonomic-aging-cardiovascular/1.0.0**](https://doi.org/10.13026/mwad-va85)
    → Place in: `0_data_preparation/hs/1_raw_ecg`
 
 2. **Patients with Congestive Heart Failure (CHF)**  
@@ -161,6 +161,10 @@ Mijat Paunović (paunovicjata@gmail.com) or Nadica Miljković (e-mail: nadica.mi
 
 # Funding
 Nadica Miljković acknowledges the support from Grant No. 451-03-137/2025-03/200103 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia. Marko Ćosić acknowledges the support from Grant No. 451-03-136/2025-03/20001 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia. Mirjana M. Platiša acknowledges the support from Grant No. 451-03-137/2025-03/200110 funded by the Ministry of Science,Technological Development and Innovation of the Republic of Serbia.
+
+# References
+1. Schumann, A., & Bär, K. (2021). Autonomic Aging: A dataset to quantify changes of cardiovascular autonomic function during healthy aging (version 1.0.0). PhysioNet. RRID:SCR_007345. [https://doi.org/10.13026/2hsy-t491](https://doi.org/10.13026/2hsy-t491)
+2. Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345. [https://doi.org/10.1161/01.cir.101.23.e215](https://doi.org/10.1161/01.cir.101.23.e215)
 
 # How to cite this repository?
 If you find Heart Rate Asymmetry index and Python code useful for your own research and teaching class, please cite the following references:
