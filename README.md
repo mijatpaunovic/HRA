@@ -5,10 +5,10 @@ This repository contains Python code and RR intervals for reproducing results pr
 This study investigates the ability of various measures to quantify asymmetry in Poincaré plots (PP) derived from Heart Rate Variability (HRV) recordings across different subject groups and short-term timescales. For each timescale (1-, 5-, 10-, and 20-minute HRV segments), the performance of the newly proposed Kernel Density Estimation–based Asymmetry Magnitude Index (KDE AMI) is assessed alongside established asymmetry measures — Histogram-based AMI (HB AMI), Guzik Index (GI), Porta Index (PI), Asymmetric Spread Index (ASI), Slope Index (SI), and Area Index (AI) — in their ability to discriminate between subject groups. All Heart Rate Asymmetry (HRA) measures are benchmarked against the standard (non-HRA) Poincaré plot descriptors, SD1 and SD2.
 
 ### Repository Structure
-All the files required to reproduce the results of the study are included - code, input data, and intermediate results. Note that the provided HRV recordings are the result of the preprocessing of raw electrocardiogram (ECG) used in the study, and therefore do not require additional preparation. Running the scripts for specific subject groups requires minimal editing which is explained in description section at the beginning of scripts. The repository is structured as follows:
+All files necessary to reproduce the study’s results are provided, including the complete codebase, input data, and intermediate outputs. The included HRV recordings represent preprocessed segments of the raw electrocardiogram (ECG) signals used in the study, and therefore require no further preparation. Executing the scripts for specific subject groups involves only minimal adjustments, as outlined in the description sections at the beginning of each script. The repository is organized as follows:
 
 #### 1. Python code
-- `nonlinear_measures.py` – Computes nonlinear measures across four short-term timescales (1-, 5-, 10-, and 20-minute HRV segments) for two subject groups.  
+- `nonlinear_measures.py` – Computes nonlinear measures across short-term timescales for two subject groups.  
 - `statistical_tests.py` – Performs group comparisons by calculating Relative Median Differences (RMDs), testing statistical significance, and estimating effect sizes.
 
 #### 2. Input data (`input_data/`)
@@ -20,7 +20,6 @@ All the files required to reproduce the results of the study are included - code
 #### 3. Results
 - `nonlinear_measures/` – Stores the computed indices for all recordings.  
 - `statistical_analysis/` – Contains the outputs of statistical tests, including RMDs, p-values, and effect sizes.
-
 
 ### Disclaimer
 The Python code is provided without any guarantee and it is not intended for medical purposes.
