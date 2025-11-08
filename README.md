@@ -8,14 +8,14 @@ This study investigates the ability of various measures to quantify asymmetry in
 All files necessary to reproduce the results of the study are provided, including the complete codebase, input data, and intermediate outputs. The included HRV recordings result from the preprocessing raw electrocardiogram (ECG) signals used in the study, and therefore require no further modifications. Executing the scripts for specific subject groups involves only a one-line adjustment (specifying which groups are to be compared), as outlined in the description sections at the beginning of each script. The repository is organized as follows:
 
 #### 1. Python code
-- `nonlinear_measures.py` - Computes nonlinear measures across short-term timescales for specified subject groups.  
-- `statistical_tests.py` - Performs statistical tests to assess the differences between specified groups.
+- [nonlinear_measures.py](nonlinear_measures.py) - Computes nonlinear measures across short-term timescales for specified subject groups.  
+- [statistical_tests.py](statistical_analysis.py) - Performs statistical tests to assess the differences between specified groups.
 
 #### 2. Input data (`input_data/`)
-- `HRV/` - HRV recordings segmented into 1-, 5-, 10-, and 20-minute intervals for:  
+- [HRV]/(input_data/HRV) - HRV recordings segmented into 1-, 5-, 10-, and 20-minute intervals for:  
   - Healthy Subjects (HS)  
   - Patients with Congestive Heart Failure (CHF)  
-- `IDs/` - CSV files listing subject IDs that satisfy the study inclusion criteria.
+- [IDs/](input_data/IDs) - CSV files listing subject IDs that satisfy the study inclusion criteria.
 
 #### 3. Results
 - `nonlinear_measures/` - Stores the computed indices for all recordings.  
