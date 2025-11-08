@@ -1,0 +1,10 @@
+RMD [%],Index,Test Used,Statistic,p-value,Significant,Effect Size Test Used,Effect Size,Effect Size Interpretation
+61.7000,SD1,Mann-Whitney U test,1748.000,<0.001,Yes,Cliff,0.550,Large
+37.1000,SD2,Mann-Whitney U test,1695.000,<0.001,Yes,Cliff,0.503,Large
+36.2000,Guzik Index,Mann-Whitney U test,1226.000,0.468,No,Cliff,0.087,Negligible
+3.2000,Porta Index,Mann-Whitney U test,1164.000,0.792,No,Cliff,0.032,Negligible
+6.9000,Asymmetric Spread Index,Mann-Whitney U test,1481.000,0.009,Yes,Cliff,0.313,Small
+33.9000,HB AMI,Mann-Whitney U test,1714.500,<0.001,Yes,Cliff,0.520,Large
+45.4000,Slope Index,Mann-Whitney U test,876.000,0.061,No,Cliff,0.223,Small
+38.7000,Area Index,Mann-Whitney U test,846.000,0.036,Yes,Cliff,0.250,Small
+43.1000,KDE AMI,Mann-Whitney U test,1753.000,<0.001,Yes,Cliff,0.554,Large
