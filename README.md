@@ -4,15 +4,25 @@ This repository contains Python code and RR intervals for reproducing results pr
 ### Brief Manuscript Overview
 This study investigates the ability of various measures to quantify asymmetry in Poincaré plots (PP) derived from Heart Rate Variability (HRV) recordings across different subject groups and short-term timescales. For each timescale (1-, 5-, 10-, and 20-minute HRV segments), the performance of the newly proposed Kernel Density Estimation–based Asymmetry Magnitude Index (KDE AMI) is assessed alongside established asymmetry measures — Histogram-based AMI (HB AMI), Guzik Index (GI), Porta Index (PI), Asymmetric Spread Index (ASI), Slope Index (SI), and Area Index (AI) — in their ability to discriminate between subject groups. All Heart Rate Asymmetry (HRA) measures are benchmarked against the standard (non-HRA) Poincaré plot descriptors, SD1 and SD2.
 
----
-### Repository Structure Overview
+### Repository Overview
 
-The repository is organized into **pipeline units**, each placed in a numbered directory. Ordinal numbers of directories (and their subdirectories) determine the execution sequence of scripts:
-1. Data Preparation, Preprocessing and RR Interval Extraction
-2. Application of Inclusion Criteria
-3. Computation of Nonlinear Measures
-4. Statistical Analyisis
-5. Visualization
+The repository is organized into the following main components:
+
+#### 1. Python code
+- `nonlinear_measures.py` – Computes all nonlinear measures across four short-term timescales (1-, 5-, 10-, and 20-minute segments) for two subject groups.  
+- `statistical_tests.py` – Assesses Relative Median Differences (RMDs), statistical significance, and effect sizes between the groups.
+
+#### 2. Input data directory (`input_data/`)
+- `HRV/` – Contains 1-, 5-, 10-, and 20-minute HRV recordings for:  
+  - Healthy Subjects (HS)  
+  - Patients with Congestive Heart Failure (CHF)  
+- `IDs/` – CSV files listing subject IDs that meet the study inclusion criteria.
+
+#### 3. Results directory
+- `nonlinear_measures/` – Output files containing all computed nonlinear_
+
+
+   
 
 ### 1️⃣ Data Preparation, Preprocessing and RR Interval Extraction
 
