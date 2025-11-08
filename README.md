@@ -12,7 +12,7 @@ All files necessary to reproduce the results of the study are provided, includin
 - [statistical_tests.py](statistical_analysis.py) - Performs statistical tests to assess the differences between specified groups.
 
 #### 2. Input data (`input_data/`)
-- [HRV]/(input_data/HRV) - HRV recordings segmented into 1-, 5-, 10-, and 20-minute intervals for:  
+- [HRV](input_data/HRV) - HRV recordings segmented into 1-, 5-, 10-, and 20-minute intervals for:  
   - Healthy Subjects (HS)  
   - Patients with Congestive Heart Failure (CHF)  
 - [IDs/](input_data/IDs) - CSV files listing subject IDs that satisfy the study inclusion criteria.
