@@ -12,13 +12,13 @@ The repository is organized into the following main components:
 - `nonlinear_measures.py` – Computes all nonlinear measures across four short-term timescales (1-, 5-, 10-, and 20-minute segments) for two subject groups.  
 - `statistical_tests.py` – Assesses Relative Median Differences (RMDs), statistical significance, and effect sizes between the groups.
 
-#### 2. Input data directory (`input_data/`)
+#### 2. Input data (`input_data/`)
 - `HRV/` – Contains 1-, 5-, 10-, and 20-minute HRV recordings for:  
   - Healthy Subjects (HS)  
   - Patients with Congestive Heart Failure (CHF)  
 - `IDs/` – CSV files listing subject IDs that meet the study inclusion criteria.
 
-#### 3. Results directory
+#### 3. Results ('results/')
 - `nonlinear_measures/` – Output files containing all computed nonlinear_
 
 
