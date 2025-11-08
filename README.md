@@ -6,20 +6,22 @@ This study investigates the ability of various measures to quantify asymmetry in
 
 ### Repository Overview
 
-The repository is organized into the following main components:
+The repository is structured into three main parts:
 
 #### 1. Python code
-- `nonlinear_measures.py` – Computes all nonlinear measures across four short-term timescales (1-, 5-, 10-, and 20-minute segments) for two subject groups.  
-- `statistical_tests.py` – Assesses Relative Median Differences (RMDs), statistical significance, and effect sizes between the groups.
+- `nonlinear_measures.py` – Computes nonlinear Poincaré plot and heart rate asymmetry measures across four short-term timescales (1-, 5-, 10-, and 20-minute HRV segments) for two subject groups.  
+- `statistical_tests.py` – Performs group comparisons by calculating Relative Median Differences (RMDs), testing statistical significance, and estimating effect sizes.
 
 #### 2. Input data (`input_data/`)
-- `HRV/` – Contains 1-, 5-, 10-, and 20-minute HRV recordings for:  
+- `HRV/` – Contains HRV recordings segmented into 1-, 5-, 10-, and 20-minute intervals for:  
   - Healthy Subjects (HS)  
   - Patients with Congestive Heart Failure (CHF)  
-- `IDs/` – CSV files listing subject IDs that meet the study inclusion criteria.
+- `IDs/` – CSV files listing subject IDs that satisfy the study inclusion criteria.
 
-#### 3. Results ('results/')
-- `nonlinear_measures/` – Output files containing all computed nonlinear_
+#### 3. Results
+- `nonlinear_measures/` – Stores the computed nonlinear and asymmetry indices for all recordings.  
+- `statistical_analysis/` – Contains the outputs of statistical tests, including RMDs, p-values, and effect sizes.
+
 
 
    
